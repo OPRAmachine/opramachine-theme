@@ -12,6 +12,9 @@
   <% if feature_enabled?(:alaveteli_pro) %>
     <li><%= link_to_unless_current "Pro", help_pro_path %></li>
   <% end %>
+  <% if feature_enabled?(:alaveteli_pro) %>
+    <li><%= link_to_unless_current "Pro", help_pro_path %></li>
+  <% end %>
 </ul>
 
 <h2 id="contact" class="contact">Contact us</h2>
