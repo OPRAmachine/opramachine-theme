@@ -15,7 +15,9 @@
 </script>
 <noscript><p><img src="//analytics.gavinrozzi.com/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- Analytics -->
+
+<% unless @user and @user.is_pro? %>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3630553298552643"
      crossorigin="anonymous"></script>
-
+<% end %>
 
