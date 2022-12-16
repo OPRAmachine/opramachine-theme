@@ -15,5 +15,11 @@
 </script>
 <noscript><p><img src="//analytics.gavinrozzi.com/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- Analytics -->
+<% if feature_enabled?(:alaveteli_pro) %>
+<li><%= link_to_unless_current "Pro", help_pro_path %></li>
+<% end %>
+<% unless current_user.has_role? :pro %>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3630553298552643"
      crossorigin="anonymous"></script>
+<% end %>
+
