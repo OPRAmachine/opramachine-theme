@@ -16,7 +16,7 @@ Rails.configuration.to_prepare do
   #     # e.g. http://demo.alaveteli.org/new/tgq?default_letter=this+is+a+test
   return @default_letter if @default_letter
   return nil if self.message_type == 'followup'
-  "Please accept this electronic request for public records made under the common law right of access and the OPRA, via email.  I am not required to fill out an official form or use a particular software platform to submit my request per NJSA 47:1A-6(f), which states that an email from a requestor including all of the information required on the adopted form shall suffice in place of a completed form as a valid government record request.
+  "Please accept this electronic request for public records made under OPRA and the common law right of access.  I am not required to fill out an official form or use a particular software platform to submit my request per NJSA 47:1A-6(f), which states that an email from a requestor including all of the information required on the adopted form shall suffice in place of a completed form as a valid government record request.
 
 I HAVE NOT been convicted of any indictable offense under the laws of New Jersey, any other state, or the United States.
 
